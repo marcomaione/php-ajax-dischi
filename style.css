@@ -28,18 +28,18 @@ select {
 
 .back {
     width: 100%;
+    min-height: 100vh;
     background-color: #1e2d3b;
 }
 
-.Cdisc {
+.container {
     width: 80%;
     margin: 0px auto;
     display: flex;
-    flex-wrap: wrap;
 }
 .card {
     width: calc(100% / 3);
-    min-height: 400px;
+    border: solid 1px red;
 }
 h3 {
     color: white;
@@ -51,8 +51,5 @@ p {
 }
 
 .card img {
-    max-width: 300px;
-    display: block;
-    margin: 0px auto;
-    text-align: center;
+    width: 100%;
 }

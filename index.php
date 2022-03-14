@@ -29,18 +29,17 @@ require __DIR__ . '/database.php';
     </header>
     <main>
         <div class="back">
-            <div class="Cdisc">
-
-                    <?php
-                            foreach ($database as $content) {
-                                echo 'div class="card">';
-                                    echo "<img src=" . $content['poster'] . ">";
-                                    echo '<h3>'. $content['title'] . '</h3>';
-                                    echo '<p>'.($content['author']) . '</p>';
-                                    echo '<p>'.($content['year']) . '</p>';
-                                echo "</div>";    
-                            }
-                    ?>
+            <div class="container">
+                <?php
+                    foreach ($database as $content) {
+                        echo 'div class="card">';
+                            echo "<img src=" . $content['poster'] . ">";
+                            echo '<h3>'. $content['title'] . '</h3>';
+                            echo '<p>'.($content['author']) . '</p>';
+                            echo '<p>'.($content['year']) . '</p>';
+                        echo "</div>";    
+                    }
+                ?>
             </div>
         </div>
     </main>
