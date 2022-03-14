@@ -21,17 +21,23 @@
             </div>
         </div>
     </header>
-    <main id="app">
-        <div class="back">
-            <div class="container">
-                <div class="card">
-
+    <main>
+        <div id="app">
+            <div class="back">
+                <div class="container">
+                    <div class="card" v-for="(album, index) in albums" :key="index">
+                        <img :src="disc.poster">
+                        <h3>{{album.title}}</h3>
+                        <p>{{album.author}}</p>
+                        <p>{{album.year}}</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </main>
-    <script src="/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

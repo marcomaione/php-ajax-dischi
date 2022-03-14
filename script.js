@@ -1,6 +1,6 @@
-const app = new Vue(
+const root= new Vue(
     {
-        el: "app",
+        el: '#app',
         data : {
             albums : []
         },
@@ -8,7 +8,8 @@ const app = new Vue(
             getAlbums(){
                 axios.get('http://localhost/php-ajax-dischi/database.php')
                 .then((response) => {
-                    this.albums.push(response.data.response);
+                    this.albums.push(response.data);
+                    console.log(this.albums);
                 });
 
             }
@@ -16,4 +17,4 @@ const app = new Vue(
             
         },
     }
-)
+);
