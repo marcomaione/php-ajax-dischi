@@ -6,9 +6,9 @@ const root= new Vue(
         },
         methods: {
             getAlbums(){
-                axios.get('http://localhost/php-ajax-dischi/database.php')
+                axios.get('http://localhost/php-ajax-dischi/serverAPI.php')
                 .then((response) => {
-                    this.albums.push(response.data);
+                    this.albums.push(response.data.response);
                     console.log(this.albums);
                 });
 
