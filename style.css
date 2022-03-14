@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ricerca {
+    height: 80px;
+    width: 100%;
+    background-color:#2e3a46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    
+.logo img {
+    max-width: 50px;
+    margin:15px 20px;
+    
+}
+
+select {
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-color: #1e2d3b;
+}
+    
+.Cdisc {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #2e3a46;
+    border-radius: 10px;
+    width:calc(90% / 5);
+    height: 350px;
+    margin:50px 10px;
+}
+    
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+span {
+    color: rgb(126, 125, 125);
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
