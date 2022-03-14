@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,24 +30,17 @@
     <main>
         <div class="back">
             <div class="Cdisc">
-                <div class="card">
-                    <?php
-                        require __DIR__ . '/database.php';
 
-                            foreach ($database as $cards => $card) {
-                    
-                                foreach ($card as $content) {
-                                    
+                    <?php
+                            foreach ($database as $content) {
+                                echo 'div class="card">';
                                     echo "<img src=" . $content['poster'] . ">";
                                     echo '<h3>'. $content['title'] . '</h3>';
                                     echo '<p>'.($content['author']) . '</p>';
                                     echo '<p>'.($content['year']) . '</p>';
-                                
-                                }
+                                echo "</div>";    
                             }
-                        
                     ?>
-                </div>
             </div>
         </div>
     </main>
