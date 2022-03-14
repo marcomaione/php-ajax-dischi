@@ -32,7 +32,7 @@ require __DIR__ . '/database.php';
             <div class="container">
                 <?php
                     foreach ($database as $content) {
-                        echo 'div class="card">';
+                        echo '<div class="card">';
                             echo "<img src=" . $content['poster'] . ">";
                             echo '<h3>'. $content['title'] . '</h3>';
                             echo '<p>'.($content['author']) . '</p>';

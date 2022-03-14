@@ -36,20 +36,28 @@ select {
     width: 80%;
     margin: 0px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 .card {
-    width: calc(100% / 3);
-    border: solid 1px red;
+    width:calc(90% / 3);
+    margin: 30px auto;
+    background-color: #2e3a46;
+    border-radius: 30px;
 }
 h3 {
     color: white;
     text-align: center;
+    margin-top: 50px;
 }
 p {
     color: gray;
     text-align: center;
+    margin: 20px 0px;
 }
 
 .card img {
-    width: 100%;
+    width: 250px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 30px;
 }
