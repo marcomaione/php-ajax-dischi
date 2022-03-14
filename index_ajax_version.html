@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dischi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="ricerca">
+            <div class="logo">
+                <img src="https://cantabrialabsdifacooper.it/wp-content/uploads/2021/03/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495-300x300.png" alt="">
+            </div>
+            <div class="select">
+                <select v-model="selectedGenre" @change="$emit('selectedGenreEvt', selectedGenre)">
+                    <option value="">seleziona un genere</option>
+                    <option v-for="(genre, index) in genresList" :value="genre" :key="index">{{genre}}</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main id="app">
+        <div class="back">
+            <div class="container">
+                <div class="card">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
