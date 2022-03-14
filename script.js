@@ -2,12 +2,12 @@ const root= new Vue(
     {
         el: '#app',
         data : {
-            albums : []
+            albums : [],
         },
         methods: {
-            getAlbums(){
+            getAlbum(){
                 axios.get('http://localhost/php-ajax-dischi/serverAPI.php')
-                .then((response) => {
+                .then((response) =>{
                     this.albums.push(response.data.response);
                     console.log(this.albums);
                 });
@@ -16,5 +16,9 @@ const root= new Vue(
 
             
         },
+        created() {
+            this.getAlbum();
+            console.log(this.albums);
+        }
     }
 );
