@@ -22,7 +22,7 @@
                         echo '<h1 class="domanda">'. $content['title'] . '</h1>';
                         echo '<p class="risposta">'. nl2br($content['year']) . '</p>';
                         echo '<p class="risposta">'. nl2br($content['author']) . '</p>';
-                        echo '<img class="risposta">'. nl2br($content['poster']) . '</img>';
+                        echo '<img>'. ($content['poster']) . '</img>';
                         
                     }
                 } 
