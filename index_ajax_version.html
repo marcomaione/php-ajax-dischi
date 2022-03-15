@@ -25,8 +25,8 @@
         <div id="app">
             <div class="back">
                 <div class="container">
-                    <div class="card" v-for="(album, index) in albums" :key="index">
-                        <img :src="disc.poster">
+                    <div class="card" v-for="album in albums">
+                        <img :src="album.poster">
                         <h3>{{album.title}}</h3>
                         <p>{{album.author}}</p>
                         <p>{{album.year}}</p>
