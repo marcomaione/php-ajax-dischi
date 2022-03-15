@@ -12,7 +12,7 @@ const root= new Vue(
             getAlbum(){
                 axios.get('http://localhost/php-ajax-dischi/serverAPI.php')
                 .then((response) =>{
-                    this.albums.push(response.data);
+                    this.albums = response.data;
                     console.log(response);
                 });
 
